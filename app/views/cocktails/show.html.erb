@@ -5,8 +5,10 @@
       <table class="table table-bordered">
         <tbody>
           <tr>
-            <th scope="row">Name</th>
-            <td><%= @cocktail.name %></td>
+            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @cocktail.photo.key, height: 300, width: 400, crop: :fill %>')">
+              <th scope="row">Name</th>
+              <td><%= @cocktail.name %></td>
+            </div>
           </tr>
         </tbody>
       </table>
